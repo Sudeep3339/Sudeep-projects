@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        button{
+            padding: 10px;
+        }
+        .buttons{
+            padding: 10px;
+        }
+        #one{
+            background-color: blue;
+        }
+        #two{
+            background-color: red;
+        }
+        #three{
+            background-color: green;
+        }
+        #four{
+            background-color: yellow;
+        }
+        #five{
+            background-color: pink;
+        }
+        #six{
+            background-color: lime;
+        }
+        #seven{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    plaese click each one
+    <script>
+        function one(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "blue";
+        }
+        function two(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "red";
+        }
+        function three(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "green";
+        }
+        function four(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "yellow";
+        }
+        function five(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "pink";
+        }
+        function six(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "lime";
+        }
+        function seven(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "aqua";
+        }
+        function eight(){
+            var x= document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "white";
+        }
+    </script>
+    <div class="buttons">
+    <button onmouseover="one()" id="one" onmouseout="eight()">blue </button>
+    <button onmouseover="two()" id="two" onmouseout="eight()">red </button>
+    <button onmouseover="three()" id="three" onmouseout="eight()"> green </button>
+    <button onmouseover="four()" id="four" onmouseout="eight()">yellow </button>
+    <button onmouseover="five()" id="five" onmouseout="eight()">pink </button>
+    <button onmouseover="six()" id="six" onmouseout="eight()">lime </button>
+    <button onmouseover="seven()" id="seven" onmouseout="eight()">aqua</button>
+</div>
+</body>
+</html>
