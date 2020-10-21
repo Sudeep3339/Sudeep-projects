@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #e74c3c;
+        }
+        .color{
+            margin-top: 300px;
+            text-align: center;
+        }
+        #hex{
+            display: block;
+            color: white;
+            font-size: 40px;
+            margin: 20px;
+        }
+        .color button{
+            margin: 20px;
+            background: none;
+            outline: none;
+            color: white;
+            border: 3px solid #8D2ed5;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <span id="hex">#E74C3C</span>
+        <button onclick="one()">Get new color</button><br>
+        if you get undifined just leave it and copy paste other part then it will work
+    </div>
+
+    <script>
+        function one(){
+            var symbols,color;
+            symbols = "123456789ABCDEF";
+            color = "#";
+
+            for(var i=0;i<6;i++){
+                color = color + symbols[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.background = color;
+            document.getElementById("hex").innerHTML = color;
+        }
+    </script>
+</body>
+</html>
